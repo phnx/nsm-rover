@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>NSM Rover</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/starter-template.css" rel="stylesheet">
+    <link href="assets/css/blinking-cursor.css" rel="stylesheet">
+    <link href="assets/css/blinking-cursor-red.css" rel="stylesheet">
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="assets/img/nsm.png" width="65px">
+          <h1><span class="navbar-brand header" href="javascript:;">NSM Rover</span></h1>
+        </div>
+
+      </div>
+    </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-6  display-area scrolling">
+          <span class="display-area-lines rover">
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+          </span>
+          <span class="blinking-cursor bottom">_</span>
+        </div>
+        
+        <div class="col-md-6 button-block">
+          
+          <div class="row">
+               <div class="col-md-12 controller-header">
+                <h3>Rover Control<span class="circle"></span></h3>
+                </div>
+             </div>
+
+             <div class="row">
+               <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+
+                  <a href="javascript:;" class="rover-move btn-block" data-direction="fwd">
+                  Forward
+                  </a>
+
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+
+                <a href="javascript:;" class="rover-move btn-block" data-direction="lft">
+                Left
+                </a>
+              </div>
+              <div class="col-md-4">
+              </div>
+              <div class="col-md-4">
+
+                <a href="javascript:;" class="rover-move btn-block" data-direction="rgt">
+                Right
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+              </div>
+              <div class="col-md-4">
+
+                <a href="javascript:;" class="rover-move btn-block" data-direction="bck">
+                Backward
+                </a>
+              </div>
+              <div class="col-md-4">
+              </div>  
+
+          </div>
+
+
+      </div> 
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-12  display-area mini">
+
+         <div class="col-md-3 mini-display-block">
+           <a class="btn-block rover-control" data-direction="strt">
+                Connect to Rover
+            </a>
+        </div>
+         <div class="col-md-3 mini-display-block">
+           <a class="btn-block rover-control" data-direction="entr">
+                Send Program
+            </a>
+        </div>
+
+        <div class="col-md-6 mini-display-block" id="remaining-cmd">
+          Recorded Rover Command : []
+        </div>
+      </div>
+
+    </div> 
+
+    <div class="row">
+
+
+      <div class="col-md-6 button-block">
+           <div class="row">
+               <div class="col-md-12 controller-header">
+                <h3 class="red">Camera Control<span class="circle"></span></h3>
+                </div>
+             </div>
+
+          <div class="row">
+             <div class="col-md-4">
+              </div>
+              <div class="col-md-4">
+
+                <a href="javascript:;" class="btn-block camera-move" data-direction="upp">
+                Up
+                </a>
+
+              </div>
+              <div class="col-md-4">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+
+                <a class=" btn-block  camera-move" data-direction="lft">
+                Left
+                </a>
+              </div>
+              <div class="col-md-4">
+              </div>
+              <div class="col-md-4">
+
+                <a href="javascript:;" class="btn-block camera-move" data-direction="rgt">
+                Right
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+              </div>
+              <div class="col-md-4">
+
+                <a href="javascript:;" class="btn-block camera-move" data-direction="dwn">
+                Down
+                </a>
+              </div>
+              <div class="col-md-4">
+              </div>  
+
+          </div>
+
+      </div> 
+
+        <div class="col-md-6  display-area scrolling">
+          <span class="display-area-lines camera">
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+            test multiple line <br>
+          </span>
+          <span class="blinking-cursor-red bottom camera">_</span>
+        </div>
+        
+        
+
+    </div>
+
+  
+
+  </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body>
+<script>
+
+  jQuery(document).ready(function() {
+    console.log('ready')
+
+    jQuery('.display-area-lines.rover').html('');
+    jQuery('.display-area-lines.camera').html('');
+
+    var cmd = [];
+    var started = false;
+    var cmdMap = {
+                    fwd : 'G',
+                    bck : 'B',
+                    lft : 'L',
+                    rgt : 'R',
+                    entr : 'Enter'
+                };
+    var limitCmd = 10;
+
+    //var hostname = 'https://httpbin.org/';
+    var hostname = 'http://localhost:8000/gateway.php?request_url=http://192.168.0.100?'; // with local gateway server
+
+    // camara vars
+    var cameraX = 90;         // start position
+    var cameraY = 90;         // start position
+    var cameraStep = 5;      // step angle
+
+    (function () {
+	  var blockContextMenu, myElement;
+
+	  blockContextMenu = function (evt) {
+	    evt.preventDefault();
+	  };
+
+	  myElement = document.querySelector('body');
+	  myElement.addEventListener('contextmenu', blockContextMenu);
+	})();
+
+    jQuery('.rover-move').click(function (){
+    	console.log('sdfsdfdsf');
+      if(cmd.length >= limitCmd) {
+        jQuery('.rover-move'). addClass('disabled');
+        printRoverLine('Not enough space for new commands. Please send entered commands first.<br>');
+      } else {
+        
+        jQuery('.rover-move').removeClass('disabled');
+
+        if(!started) {
+          jQuery('.display-area-lines.rover').html('Connect to NSM Rover before continuing...');
+        } else {
+          var direction = jQuery(this).data('direction');
+          console.log('Rover move ', direction);
+
+          cmd.push(direction);
+          jQuery('#remaining-cmd').html('Recorded Rover Command : ' + JSON.stringify(cmd));
+
+          printRoverLine('Recording - Move - ' + direction + '<br>');
+        } 
+        
+        bottomLine(0);
+
+      }
+
+    });
+
+    jQuery('.rover-control').click(function (){
+      var direction = jQuery(this).data('direction');
+      console.log('Rover control ', direction);
+
+      if(direction == 'strt') {
+        cmd = [];
+
+        jQuery('.display-area-lines.rover').html('');
+        printRoverLine('Start recording the program. Please select moving steps and send..<br>');
+        printRoverLine('==========================================================<br>');
+        
+        bottomLine(0);
+
+        started = true;
+
+        // Start Connection
+        // http://192.168.0.100?Start
+        // required server to allow CORS
+        // https://www.arduino.cc/en/Tutorial/WebServer
+        //
+        // Alternative with gateway in localhost
+        // http://localhost:8000/gateway.php?request_url=[url]
+
+        jQuery.get( hostname+"Start", function( data ) {
+          console.log(data)
+        });
+
+      } else if (direction == 'entr') {
+
+        // TO-DO pop cmd array - call AJAX
+        // http://192.168.0.100?G
+        // http://192.168.0.100?L
+        // http://192.168.0.100?R
+        // http://192.168.0.100?B
+        // http://192.168.0.100?Enter
+
+        cmd.push('entr');
+
+        var i = 0;
+        
+        jQuery('.display-area-lines.rover').html('');
+        
+        function cmdIteration (data) {   
+
+           setTimeout(function () {    
+              var statement = data.shift();
+              jQuery('#remaining-cmd').html('Recorded Rover Command : ' + JSON.stringify(data));
+              statement = cmdMap[statement];
+
+              // TO-DO call actual urls
+              jQuery.ajax( {
+              	url: hostname+ statement,
+              	type: 'get',
+              	async: false,
+              	success:
+	              	 function( data ) {
+		                console.log(data)
+		            }
+              }	);
+
+              if(statement != 'Enter')
+                printRoverLine('Control Center to Rover - Move - ' + statement + '<br>');
+              else
+                printRoverLine('End of transmission - Over.<br>');
+
+              bottomLine(2);
+
+              if (data.length > 0) {      
+                 cmdIteration(data); 
+              }
+           }, 100);
+
+        }
+
+        printRoverLine('Begin transmission : ' + '<br>');
+        
+        cmdIteration(cmd);               
+
+        cmd = [];
+        started = false;
+
+      }
+
+      bottomLine(0);
+
+
+    });
+
+    jQuery('.camera-move').click(function (){
+      var direction = jQuery(this).data('direction');
+      console.log('Camera move ', direction);
+
+      // TO-DO call actual API
+      // http://192.168.0.100?X=81&
+      // http://192.168.0.100?Y=81&
+      if(direction == 'upp') {
+        if(cameraY >= 180) {
+          printCameraLine('Highest angle<br>');
+        } else {
+          cameraY = (cameraY + cameraStep > 180 ) ? 180 : cameraY + cameraStep;
+          printCameraLine('Control Center to Camera - Pan - '+ direction + '<br>');
+          jQuery.get( hostname+ "Y=" + cameraY+"&", function( data ) {
+            console.log(data)
+          });
+        }
+      } else if(direction == 'dwn') {
+        if(cameraY <=0) {
+          printCameraLine('Lowest angle<br>');
+        } else {
+          cameraY = (cameraY - cameraStep < 0 ) ? 0 : cameraY - cameraStep;
+          printCameraLine('Control Center to Camera - Pan - '+ direction + '<br>');
+          jQuery.get( hostname+"Y=" + cameraY+"&", function( data ) {
+            console.log(data)
+          });
+        }
+      } else if(direction == 'rgt') {
+        if(cameraX <=0) {
+          printCameraLine('Lowest angle<br>');
+        } else {
+          cameraX = (cameraX - cameraStep < 0 ) ? 0 : cameraX - cameraStep;
+          printCameraLine('Control Center to Camera - Pan - '+ direction + '<br>');
+          jQuery.get( hostname+ "X=" + cameraX+"&", function( data ) {
+            console.log(data)
+          });
+        }
+      } else if(direction == 'lft') {
+        if(cameraX >= 180) {
+          printCameraLine('Highest angle<br>');
+        } else {
+          cameraX = (cameraX + cameraStep > 180 ) ? 180 : cameraX + cameraStep;
+          printCameraLine('Control Center to Camera - Pan - '+ direction + '<br>');
+          jQuery.get( hostname+"X=" + cameraX+"&", function( data ) {
+            console.log(data)
+          });
+        }
+      } 
+
+      
+      bottomLine(2);
+    });
+
+    function printRoverLine(line) {
+      jQuery('.display-area-lines.rover').append(line);
+    }
+    function printCameraLine(line) {
+      jQuery('.display-area-lines.camera').append(line);
+    }
+    function bottomLine(n) {
+      jQuery('.display-area')[n].scrollTop = jQuery('.display-area')[n].scrollHeight;
+    }
+
+  });
+
+</script>
+
+</html>

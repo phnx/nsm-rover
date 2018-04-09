@@ -1,0 +1,202 @@
+body {
+	padding-top: 50px;
+	background-image: url(../img/STSCPanel.jpg) ;
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	background-color: #999;
+	overflow:hidden;
+}	
+
+@font-face {
+    font-family: 'Orbitron';
+    src: 
+    	url('../font/orbitron-black-webfont.woff') format('woff');
+    				;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+h1{
+	font-family: 'Orbitron';
+	float:	right;
+    color: #777;
+}
+a {
+	/*pointer-events: none;*/
+}
+
+.navbar
+{
+    background-color: transparent;
+}
+.navbar-inverse {
+	border-color: transparent;
+}
+.navbar-brand {
+	font-size: larger;
+	margin-left: 0px;
+	padding: 00px 50px;
+}
+.display-area {
+	font-family: monospace;
+	font-weight: bolder;
+	color:	#0F0;
+	background:	#000;
+	opacity: 0.7;
+	height:	400px;
+	display:block;
+	margin:	30px 0px 10px;
+	overflow: hidden;
+
+}
+.button-block {
+	height:	250px;
+	display:block;
+	margin:	30px 0px 10px;
+	padding-top: 25px;
+}
+
+.display-area.mini {
+	height:	80px!important;
+	margin:	10px 0px; 
+
+}
+
+.mini-display-block {
+	padding:	15px;
+	word-wrap: break-word;
+}
+
+.btn-block {
+	font-weight: bold;
+}
+.container-fluid {
+	padding: 20px 50px;			
+}
+.container-fluid .row {
+	padding: 0px 50px;			
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #4F4;
+    border-color: #080;
+
+	font-family: monospace;
+}
+.btn-primary:hover {
+    background-color: #0F0;
+}
+.btn-primary:active {
+    background-color: #0F0;
+}
+.btn-primary:visited {
+    background-color: #0F0;
+}
+.controller-header {
+	font-family: 'Orbitron';
+	text-align: center;
+	color:	#0F0;
+}
+.circle:before {
+	vertical-align: sub;
+  content: ' \25CF';
+  font-size: 45px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: blinkingDot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinkingDot {
+    0%   {color: #0F0;}
+    50%  {color: #F00;}
+    100% {color: #0F0;}
+}
+
+a.rover-move, a.rover-control {
+  display: inline-block;
+  background-color: #4f4;
+  font-family: monospace;
+  color:	#000;
+  padding: 0.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  border-bottom: 0.25em solid #360;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  box-shadow: 0 2px 3px #ccc;
+  position: relative;
+  text-align: center;
+}
+
+a.rover-move:hover, a.rover-control:hover  {
+	text-decoration: none;
+  color:	#000;
+}
+a.rover-move:active, a.rover-control:active { 
+	border-top: 0.25em solid transparent;
+	border-bottom: 0em solid transparent;
+	text-decoration: none;
+  color:	#000;	
+
+}
+a.rover-move:visited, a.rover-control:visited { 
+	border-top: 0.25em solid transparent;
+	border-bottom: 0em solid transparent;
+	text-decoration: none;
+  	color:	#000;	
+
+}
+
+
+a.camera-move {
+  display: inline-block;
+  background-color: #FF1010;
+  font-family: monospace;
+  color:	#000;
+  padding: 0.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  border-bottom: 0.25em solid #661010;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  box-shadow: 0 2px 3px #ccc;
+  position: relative;
+  text-align: center;
+}
+
+a.camera-move:hover{
+	text-decoration: none;
+  	color:	#000;
+}
+a.camera-move:active { 
+	border-top: 0.25em solid transparent;
+	border-bottom: 0em solid transparent;
+	text-decoration: none;
+  	color:	#000;	
+
+}
+
+a.camera-move:visited { 
+	border-top: 0.25em solid transparent;
+	border-bottom: 0em solid transparent;
+	text-decoration: none;
+  	color:	#000;	
+
+}
+
+.red, .camera {
+	color: #F00 !important;
+}

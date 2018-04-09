@@ -1,0 +1,55 @@
+.blinking-cursor-red {
+  font-weight: 100;
+  font-size: 30px;
+  color: #F00;
+  -webkit-animation: 1s blink-red step-end infinite;
+  -moz-animation: 1s blink-red step-end infinite;
+  -ms-animation: 1s blink-red step-end infinite;
+  -o-animation: 1s blink-red step-end infinite;
+  animation: 1s blink-red step-end infinite;
+}
+
+@keyframes "blink-red" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #F00;
+  }
+}
+
+@-moz-keyframes blink-red {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #F00;
+  }
+}
+
+@-webkit-keyframes "blink-red" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #F00;
+  }
+}
+
+@-ms-keyframes "blink-red" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #F00;
+  }
+}
+
+@-o-keyframes "blink-red" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #F00;
+  }
+}
